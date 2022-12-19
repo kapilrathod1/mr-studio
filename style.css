@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 105px;
+    background-color: #fffefe;
+}
+nav img{
+    height: 66px;
+}
+nav i{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+}
+nav ul li:hover{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.749);
+}
+nav .login-btn,.login-btn-res{
+    height: 45px;
+    width: 85px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0,0.1);
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 35px;
+    transition: all ease-in-out 0.3s;
+}
+nav .login-btn:hover{
+background-color: #5f50e434;
+border: none;
+font-size: 15px;
+}
+.login-btn-res{
+    display: none;
+}
+nav .sign-btn{
+    height: 45px;
+    width: 90px;
+    border-radius: 8px;
+    border:none;
+    background-color: #5f50e4;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all ease-in-out 0.3s;
+}
+nav .sign-btn:hover{
+    font-size: 14px;
+    background-color: #3e2dd5;
+}
+.hero{
+    padding: 22px 105px;
+    padding-bottom: 50px;
+    display: flex;
+    background-color: #fffefe;
+}
+.first-section{
+    width: 50%;
+    padding: 0px 60px 0px 0px;
+}
+.first-section h1{
+    font-size: 49px;
+    margin-top: 45px;
+    line-height: 65px;
+}
+.first-section .p-1{
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.btn-section {
+display: flex;
+justify-content: space-between;
+}
+.btn-section button{
+    height: 50px;
+    width: 145px;
+    border-radius: 8px;
+    border:none;
+    background-color: #5f50e4;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all ease-in-out 0.3s;
+}
+.btn-section button:hover{
+    background-color: #3e2dd5;
+    border: none;
+    font-size: 14px;
+    }
+.btn-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 9px;
+    font-weight: 600;
+    color: rgb(0, 0, 0,0.7);
+}
+
+.btn-section div span{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(0, 0, 0,0.7);
+}
+.second-section{
+    width: 50%;
+}
+.second-section img{
+    height: 620px;
+}
+.members-p{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.img-section{
+    height: 105px;
+    width: 360px;
+    padding: 20px 25px;
+    border-radius: 18px;
+    box-shadow:0px 20px 40px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.img-section span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-section span img{
+    height: 35px;
+    transition: all ease-in-out 0.3s;
+}
+.img-section span img:hover{
+    height: 45px;
+    }
+.img-section span p{
+    font-size: 10px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0,0.5);
+}
+@media(max-width:768px){
+    nav{
+        padding: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav i{
+        display: block;
+        font-size: 19px;
+    }
+    nav img{
+        height: 40px;
+    }
+    .login-btn-res{
+        height: 25px;
+        width: 55px;
+        display: block;
+        margin: 0;
+    }
+    .hero{
+        padding: 0 20px;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+    }
+    .first-section{
+width: 100%;
+padding: 0;
+    }
+    .second-section{
+        width: 100%;
+    }
+    .second-section img{
+height: 420px;
+    }
+    .first-section h1{
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+    .first-section .p-1{
+        font-size: 9px;
+        line-height: 15px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .btn-section{
+        align-items: center;
+    }
+    .btn-section div span {
+        font-size: 12px;
+    }
+    .btn-section div{
+        font-size: 6px;
+        text-align: center;
+    }
+    .members-p{
+        margin-top: 20px;
+    }
+    .img-section{
+        margin-bottom: 30px;
+    }
+}
